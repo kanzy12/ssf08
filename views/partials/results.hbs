@@ -1,0 +1,27 @@
+<div>
+    <h1>Results</h1>
+</div>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <td>Employee #</td>
+                <td>First name</td>
+                <td>Last name</td>
+                <td>Gender</td>
+                <td>Birthdate</td>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each employees}}
+            <tr>
+                <td>{{this.emp_no}}</td>
+                <td>{{this.first_name}}</td>
+                <td>{{this.last_name}}</td>
+                <td>{{this.gender}}</td>
+                <td>{{this.birth_date}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
